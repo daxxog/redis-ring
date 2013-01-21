@@ -14,4 +14,11 @@ var ring = [
 
 client.set('hello', 'world');
 
+var c = client.subscribe('hello', function(message) {
+    console.log('hello ' + message);
+    c.quit();
+});
+
+client.publish('hello', 'world');
+
 client.quit();
