@@ -1,22 +1,28 @@
 {
-    "name"        : "redis-ring",
-    "description" : "A node_redis wrapper that adds node-hash-ring support.",
-    "homepage"    : "https://github.com/daxxog/redis-ring",
-    "main"        : "index.js",
-    "version"     : "0.0.3",
-    "engines": { "node" : ">=0.8.15" },
-    "maintainers": [{
-        "name"  : "David Volm",
-        "email" : "david@volminator.com",
-        "web"   : "http://daxxog.com/"
-    }],
-    "repositories": [{
-        "type" : "git",
-        "url"  : "https://github.com/daxxog/coffeeshop.js.git"
-    }],
-    "dependencies": {
-        "redis" : "*",
-        "hiredis" : "*",
-        "hash_ring" : "*"
+  "name": "redis-ring",
+  "description": "A node_redis wrapper that adds node-hash-ring support.",
+  "homepage": "https://github.com/daxxog/redis-ring",
+  "main": "index.js",
+  "version": "0.0.4",
+  "engines": {
+    "node": ">=0.8.15"
+  },
+  "maintainers": [
+    {
+      "name": "David Volm",
+      "email": "david@volminator.com",
+      "web": "http://daxxog.com/"
     }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/daxxog/coffeeshop.js.git"
+    }
+  ],
+  "dependencies": {
+    "redis": "*",
+    "hiredis": "*",
+    "hashring": "~1.0.1"
+  }
 }
